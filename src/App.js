@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AddTask from './components/AddTask';
 import Completed from './components/Completed';
 import Incomplete from './components/Incomplete';
+import SingleComponentApp from './components/SingleComponentApp';
 
 function App() {
   //this app file will hold state
@@ -27,6 +28,7 @@ function App() {
       <AddTask onclick={handleAdd} />
       <Incomplete />
       <Completed />
+      <SingleComponentApp/>
     </div>
   );
 }
