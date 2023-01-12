@@ -3,7 +3,11 @@ import { useState } from 'react';
 import AddTask from './components/AddTask';
 import Completed from './components/Completed';
 import Incomplete from './components/Incomplete';
-import SingleComponentApp from './components/SingleComponentApp';
+import SingleComponentApp from './components/Regina/SingleComponentApp';
+import InputForm from './components/Regina/InputForm';
+import IncompleteTasks from './components/Regina/IncompleteTasks';
+import CompletedTasks from './components/Regina/CompletedTasks';
+import MultiComponentApp from './components/Regina/MultiComponentApp';
 
 function App() {
   //this app file will hold state
@@ -28,7 +32,10 @@ function App() {
       <AddTask onclick={handleAdd} />
       <Incomplete />
       <Completed />
-      <SingleComponentApp/>
+      <div>
+        <SingleComponentApp />
+      </div>
+      <MultiComponentApp />
     </div>
   );
 }

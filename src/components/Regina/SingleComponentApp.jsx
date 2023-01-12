@@ -37,7 +37,7 @@ export default function SingleComponentApp(){
           <ul>
             {taskList.map((task, i) => {
               return (
-                <div key={i.toString}>
+                <div key={i+task}>
                   <li>
                     <input
                       type="checkbox"
@@ -56,7 +56,7 @@ export default function SingleComponentApp(){
         </div>
         <div id="completed">
           Completed Tasks
-          <button>Clear Completed</button>
+          <button onClick={()=>setCompletedTasks([])}>Clear Completed</button>
           <ul>
             {completedTasks.map((task) => {
               return <li>{task}</li>;

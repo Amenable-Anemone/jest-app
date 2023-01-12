@@ -1,6 +1,7 @@
 
-#singleComponentApp {
+#singleComponentApp, #multicomponentApp {
   border: 1px solid blue;
   margin: 20px;
   padding: 10px;
 }
+
